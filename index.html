@@ -217,14 +217,14 @@
         }
 
         .quiz p {
-            padding-left: 45%;
+            text-align: center;
         }
 
         .quiz h2 {
             font-size: 48px;
-            width: 478px;
             text-align: center;
-            padding-left: 30%;
+            margin-left: 30%;
+            margin-right: 30%;
             color: #e7131b;
         }
 
@@ -238,8 +238,87 @@
             border-radius: 35px;
             background-color: #e7131b;
             color: #f0f4ef;
-            margin-left: 38%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
+
+        .blogtext h2 {
+            font-family: var(--font-family);
+            font-size: 48px;
+            text-align: center;
+            color: #e7131b;
+        }
+
+        .blogtext p {
+            font-family: var(--font-family);
+            text-align: center;
+        }
+
+        .blogcontent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2%;
+            margin-left: 188px;
+            margin-right: 188px;
+            margin-bottom: 2%;
+        }
+
+        .blogcontent div {
+            background-color: #fce7e7;
+            margin-top: 25px;
+            border-radius: 35px;
+        }
+
+        .blogcontent img {
+            display: block;
+            border-radius: 85px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        }
+
+        .blogcontent h4 {
+            font-family: var(--font-family);
+            font-size: 20px;
+            color: #e7131b;
+            text-align: center;
+        }
+
+        .blogcontent p {
+            text-align: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 10%;
+            font-family: var(--font-family);
+            font-size: 18px;
+        }
+
+        .blog button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 65px;
+            width: 270px;
+            border-radius: 35px;
+            border-style: solid;
+            border-color: #e7131b;
+            background-color: #ffffff;
+            margin-bottom: 3%;
+        }
+
+        .blog button a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+            font-family: var(--font-family);
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.08rem;
+        }
+
+
 
         .location {
             display: grid;
@@ -367,6 +446,31 @@
             <button>TAKE THE QUIZ</button>
         </section>
 
+        <section class="blog">
+            <div class="blogtext">
+                <p>BLOG</p>
+                <h2>Read What Others Have To Say</h2>
+            </div>
+            <div class="blogcontent">
+                <div class="first">
+                    <img src="Images/Blog 1.png" alt="">
+                    <h4>CHRISTINA MOREAU</h4>
+                    <p>“I have so much passion and so many dreams. Because of blood donations I’ve been able to say ‘Nope! Sorry illness. You’re not going to get me. I’m going to persevere.’”</p>
+                </div>
+                <div class="second">
+                    <img src="Images/Blog 2.png" alt="">
+                    <h4>NICK EVANS</h4>
+                    <p> “Years ago, a few buddies and I would hop on our bicycles and ride down to donate together”</p>
+                </div>
+                <div class="third">
+                    <img src="Images/Blog 3.png" alt="">
+                    <h4>MARY BEAUCAGE</h4>
+                    <p> “For us to have our health, to have our physical strength even, that helps us do the work to regain culture, language and traditions” </p>
+                </div>
+            </div>
+            <button><a href="">EXPLORE  STORIES</a></button>
+        </section>
+
         <section class="location">
             <div class="address">
                 <p class="details">DETAILS</p>
@@ -379,6 +483,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.210243765103!2d-79.3892479233259!3d43.64379395303842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d6785ffb55%3A0x4209e1f8fd986202!2sMetro%20Toronto%20Convention%20Centre!5e0!3m2!1sen!2sca!4v1668404339108!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
             </div>
         </section>
+
+        
     </main>
 
     <footer>

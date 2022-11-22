@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloodrive</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <script>
-        
-    </script>
+    <title>Document</title>
     <style>
         body{
             border: 0rem;
@@ -56,6 +49,7 @@
             padding-right: 13%;
             font-size: 4rem;
             font-weight: 700;
+            margin-left: 0%;
         }
 
         .navbar {
@@ -78,8 +72,9 @@
             font-size: 16px;
             letter-spacing: 0.06rem;
         }
-        
-        .heading {
+
+
+        .blog {
             font-family: var(--font-family);
             font-size: 16px;
             height: 40rem;
@@ -88,17 +83,18 @@
             grid-template-columns: 1fr 1fr;
             padding-left: 13%;
             padding-right: 13%;
+            gap: 5%;
 
         }
 
-        .thedrive {
+        .blogheading {
             padding-top: 25px;
         }
 
-        .thedrive h1 {
+        .blogheading h1 {
             font-size: 64px;
             font-weight: 800;
-            width: 450px;
+            width: 650px;
             padding-top: 0%;
             margin: 0%;
         }
@@ -109,262 +105,113 @@
             padding-bottom: 10px;
         }
 
-        .button1 {
-            font-size: 20px;
-            font-weight: 700;
-            font-kerning: 10%;
-            height: 65px;
-            width: 255px;
-            background-color: #e7131b;
-            border-radius: 34px;
-            border: none;
-            
+        /*/blogpost 1/*/
 
-        }
-
-        .button1 a {
-            text-decoration: none;
-            color: #f0f4ef;
-            letter-spacing: 0.08rem;
-        }
-
-        .button2 {
-            margin-left: 15px;
-            font-size: 20px;
-            font-weight: 700;
-            height: 65px;
-            width: 255px;
-            background-color: #ffffff;
-            border-radius: 34px;
-            border-color: #e7131b;
-            border-style: solid;
-
-        }
-
-
-        .button2 a {
-            text-decoration: none;
-            color: #e7131b;
-            letter-spacing: 0.08rem;
-            
-        }
-
-        .registeration {
+        .blog1 {
             font-family: var(--font-family);
-            font-size: 16px;
-            height: 40rem;
-            align-items: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding-left: 13%;
-            padding-right: 13%;
-            padding-bottom: 83px;
-
-        }
-
-        .register {
-            padding-top: 25px;
-        }
-
-        .register h2 {
-            font-size: 48px;
-            font-weight: 800;
-            width: 350px;
-            padding-top: 0%;
-            margin: 0%;
-        }
-
-        .skip {
-            font-size: 18px;
-            width: 555px;
-            padding-bottom: 10px;
-        }
-
-        .registerbutton {
-            font-size: 20px;
-            font-weight: 700;
-            font-kerning: 10%;
-            height: 65px;
-            width: 255px;
-            background-color: #e7131b;
-            border-radius: 34px;
-            border: none;
-            
-
-        }
-
-        .registerbutton a {
-            text-decoration: none;
-            color: #f0f4ef;
-            letter-spacing: 0.08rem;
-        }
-
-        .registeration img {
-            padding-left: 89px;
-            padding-top: 42px;
-        }
-
-        .quiz {
+            height: 36rem;
             background-color: #fce7e7;
-            font-family: var(--font-family);
-            height: 35rem;
-            margin-left: 188px;
-            margin-right: 188px;
-            margin-bottom: 83px;
-            padding-top: 58px;
-            padding-bottom: 58px;
-            display: grid;
-            grid-template-rows: 1fr 3fr 1fr;
-            align-items: center;
+            align-content: center;
+            margin-left: 13%;
+            margin-right: 13%;
             border-radius: 35px;
-        }
-
-        .quiz p {
-            text-align: center;
-        }
-
-        .quiz h2 {
-            font-size: 48px;
-            text-align: center;
-            margin-left: 30%;
-            margin-right: 30%;
-            color: #e7131b;
-        }
-
-        .quiz button {
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: 0.06rem;
-            height: 65px;
-            width: 281px;
-            border: none;
-            border-radius: 35px;
-            background-color: #e7131b;
-            color: #f0f4ef;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .blog {
-            height: 50rem;
-            margin-top: 10%;
-            margin-bottom: 4%;
-        }
-
-        .blogtext h2 {
-            font-family: var(--font-family);
-            font-size: 48px;
-            text-align: center;
-            color: #e7131b;
-            margin-left: 35%;
-            margin-right: 35%;
-        }
-
-        .blogtext p {
-            font-family: var(--font-family);
-            text-align: center;
-        }
-
-        .blogcontent {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2%;
-            margin-left: 188px;
-            margin-right: 188px;
+            letter-spacing: 5%;
             margin-bottom: 2%;
         }
 
-        .blogcontent div {
-            background-color: #fce7e7;
-            margin-top: 25px;
-            border-radius: 35px;
-        }
-
-        .blogcontent img {
-            display: block;
-            border-radius: 85px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10%;
-        }
-
-        .blogcontent h4 {
-            font-family: var(--font-family);
-            font-size: 20px;
-            color: #e7131b;
-            text-align: center;
-        }
-
-        .blogcontent p {
-            text-align: center;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-bottom: 10%;
-            font-family: var(--font-family);
-            font-size: 18px;
-        }
-
-        .blog button {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 65px;
-            width: 270px;
-            border-radius: 35px;
-            border-style: solid;
-            border-color: #e7131b;
-            background-color: #ffffff;
-            margin-bottom: 3%;
-        }
-
-        .blog button a {
-            color: black;
-            text-decoration: none;
-            text-align: center;
-            align-items: center;
-            font-family: var(--font-family);
-            font-size: 18px;
-            font-weight: 600;
-            letter-spacing: 0.08rem;
-        }
-
-
-
-        .location {
+        .username {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin-left: 188px;
-            margin-right: 188px;
-            height: 448px;
-            padding-bottom: 116px;
-        }
-
-        .address {
-            padding-top: 50px;
-            font-family: var(--font-family);
+            grid-template-columns: 1fr 5.5fr;
+            align-items: center;
             color: #e7131b;
+            padding-left: 6%;
+            padding-top: 4%;
+            padding-bottom: 1%;
         }
 
-        .address h3 {
+        .username h2 {
             font-size: 32px;
+            margin-bottom: 0px;
         }
 
-        .details {
-            color: black;
-            font-size: 16px;
-        }
-
-        .address h4 {
-            font-size: 28px;
-            font-weight: 500;
-        }
-
-        .place {
+        .blogcontent {
+            padding-left: 6%;
+            padding-right: 6%;
             font-size: 20px;
+            letter-spacing: 0.8px;
         }
 
-        
+        /*/blogpost 2 /*/
+
+        .blog2 {
+            font-family: var(--font-family);
+            height: 30rem;
+            background-color: #fce7e7;
+            align-content: center;
+            margin-left: 13%;
+            margin-right: 13%;
+            border-radius: 35px;
+            letter-spacing: 5%;
+            margin-bottom: 2%;
+        }
+
+        .username2 {
+            display: grid;
+            grid-template-columns: 1fr 5.5fr;
+            align-items: center;
+            color: #e7131b;
+            padding-left: 6%;
+            padding-top: 4%;
+            padding-bottom: 1%;
+        }
+
+        .username2 h2 {
+            font-size: 32px;
+            margin-bottom: 0px;
+        }
+
+        .blog2content {
+            padding-left: 6%;
+            padding-right: 6%;
+            font-size: 20px;
+            letter-spacing: 0.8px;
+        }
+
+        /*/blogpost 3 /*/
+        .blog3 {
+            font-family: var(--font-family);
+            height: 36rem;
+            background-color: #fce7e7;
+            align-content: center;
+            margin-left: 13%;
+            margin-right: 13%;
+            border-radius: 35px;
+            letter-spacing: 5%;
+            margin-bottom: 2%;
+        }
+
+        .username3 {
+            display: grid;
+            grid-template-columns: 1fr 5.5fr;
+            align-items: center;
+            color: #e7131b;
+            padding-left: 6%;
+            padding-top: 4%;
+            padding-bottom: 1%;
+        }
+
+        .username3 h2 {
+            font-size: 32px;
+            margin-bottom: 0px;
+        }
+
+        .blog3content {
+            padding-left: 6%;
+            padding-right: 6%;
+            font-size: 20px;
+            letter-spacing: 0.8px;
+        }
+
 
         footer {
             height: 36rem;
@@ -412,90 +259,76 @@
 </head>
 <body>
     <header>
-      <div class="header">
-        <a href="">Bloodrive</a>
-        <nav class="navbar">
-            <a href="">THE DRIVE</a>
-            <a href="blogs.html">BLOG</a>
-            <a href="">CONTRIBUTE</a>
-            <button>REGISTER NOW</button>
-        </nav>
-      </div>
+        <div class="header">
+          <a href="">Bloodrive</a>
+          <nav class="navbar">
+              <a href="">THE DRIVE</a>
+              <a href="">BLOG</a>
+              <a href="">CONTRIBUTE</a>
+              <button>REGISTER NOW</button>
+          </nav>
+        </div>
     </header>
 
     <main>
-        
-        <section class="heading">
-            <div class="thedrive">
-                <p>THE DRIVE</p>
-                <h1>Hello Toronto! Get Ready For Bloodrive..</h1>
-                <p class="intro">Join others in one of the city’s biggest blood donation events and make an impact.</p>
-                <button class="button1"><a href="">EXPLORE</a></button>
-                <button class="button2"><a href="">LEARN MORE</a></button>
-            </div>
-            <div class="headingimage">
-                <img src="Images/Heading.png" alt="Blood Donation Illustration" height="542px">
-            </div>
-        </section>
-
-        <section class="registeration">
-            <div class="stopwatch">
-                <img src="Images/Registeration.png" alt="Stopwatch" height="301px">
-            </div>
-            <div class="register">
-                <p>REGISTERATION</p>
-                <h2>Save Time By Booking In Advance</h2>
-                <p class="skip">Skip the queues and long wait times by booking an appointment.</p>
-                <button class="registerbutton"><a href="">REGISTER</a></button>
-            </div>
-            
-        </section>
-
-        <section class="quiz">
-            <p>ARE YOU ELIGIBLE</p>
-            <h2>Take This 2-Minute Quiz To Know If You Can Donate</h2>
-            <button>TAKE THE QUIZ</button>
-        </section>
-
         <section class="blog">
-            <div class="blogtext">
+            <div class="blogheading">
                 <p>BLOG</p>
-                <h2>Read What Others Have To Say</h2>
+                <h1>Blood Donation Can Turn Someone’s Life Around...</h1>
+                <p class="intro">Here are some inspiring stories</p>
+            </div>
+            <div class="blooddropimage">
+                <img src="Images/Blog Heading Pic.png" alt="Blood Drop Illustration" height="542px">
+            </div>
+        </section>
+
+        <section class="blog1">
+            <div class="username">
+                <img src="Images/Blog Pic 1.png" alt="Christina Moreau Image">
+                <div class="blogtext">
+                    <h2>CHRISTINA MOREAU</h2>
+                    <p>Published Sept. 21, 2022</p>
+                </div>
             </div>
             <div class="blogcontent">
-                <div class="first">
-                    <img src="Images/Blog 1.png" alt="">
-                    <h4>CHRISTINA MOREAU</h4>
-                    <p>“I have so much passion and so many dreams. Because of blood donations I’ve been able to say ‘Nope! Sorry illness. You’re not going to get me. I’m going to persevere.’”</p>
-                </div>
-                <div class="second">
-                    <img src="Images/Blog 2.png" alt="">
-                    <h4>NICK EVANS</h4>
-                    <p> “Years ago, a few buddies and I would hop on our bicycles and ride down to donate together”</p>
-                </div>
-                <div class="third">
-                    <img src="Images/Blog 3.png" alt="">
-                    <h4>MARY BEAUCAGE</h4>
-                    <p> “For us to have our health, to have our physical strength even, that helps us do the work to regain culture, language and traditions” </p>
-                </div>
-            </div>
-            <button><a href="">EXPLORE  STORIES</a></button>
-        </section>
-
-        <section class="location">
-            <div class="address">
-                <p class="details">DETAILS</p>
-                <h3>December 20, 2022</h3>
-                <h4>Metro Toronto Convention Centre</h4>
-                <p class="place">222, Bremner Blvd, Toronto, ON</p>
-                <h4>11AM - 5PM</h4>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.210243765103!2d-79.3892479233259!3d43.64379395303842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d6785ffb55%3A0x4209e1f8fd986202!2sMetro%20Toronto%20Convention%20Centre!5e0!3m2!1sen!2sca!4v1668404339108!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                <p>When Christina Moreau was a toddler, nobody would have predicted the future she’s living today: training in gymnastics for 16 hours a week, with dreams of the Olympics and performing as a stunt double.</p>
+                <p>“My parents noticed that unlike other kids, I wasn’t active, and I got tired very easily,” says Moreau, who is now 12 years old and lives with her family in Toronto, Ont.</p>
+                <p>At first, Lee’s mother, Polina, thought she was just a little quiet and low-energy by nature. But then, during a visit with family in China shortly after her second birthday, Lee developed stomach bug symptoms. A trip to the doctor led to an ultrasound that revealed a very serious problem: ureteral stricture hydronephrosis.</p>
+                <a href="">Read Full Story >></a>            
             </div>
         </section>
 
-        
+        <section class="blog2">
+            <div class="username2">
+                <img src="Images/Blog Pic 2.png" alt="Nick Evans Image">
+                <div class="blog2text">
+                    <h2>NICK EVANS</h2>
+                    <p>Published Aug. 1, 2022</p>
+                </div>
+            </div>
+            <div class="blog2content">
+                <p>The need is constant for blood, plasma and platelet donors, and it doesn’t take a break for summer. Whether you’re travelling around Canada or staying close to home</p>
+                <p>When Nick Evans was in high school, the school rugby team was encouraging students to donate blood. He figured he’d give it a try, and now, more than 40 years later, he’s still going strong.</p>
+                <p>Along the way, he’s also inspired many others to join him in helping patients.</p>
+                <a href="">Read Full Story >></a>            
+            </div>
+        </section>
+
+        <section class="blog3">
+            <div class="username3">
+                <img src="Images/Blog Pic 3.png" alt="Mary Beaucage Image">
+                <div class="blog3text">
+                    <h2>MARY BEAUCAGE</h2>
+                    <p>Published Sept. 19, 2022</p>
+                </div>
+            </div>
+            <div class="blog3content">
+                <p>A kidney donation in 2015 didn’t just free Mary Beaucage from dialysis. It empowered her to work to improve care for others, especially Indigenous patients — and in doing so, to be a part of strengthening their communities.</p>
+                <p>“For us to have our health, to have our physical strength even, that helps us do the work to regain culture, language and traditions,” says Mary, 53, who lives in Nipissing First Nation in northern Ontario.  “When I was on dialysis, I wanted to go to language classes to study Anishinaabemowin on days when I didn’t have treatment. But I had such brain fog I couldn’t retain anything. </p>
+                <p>“Learning about plants as medicine, or history, or building a lodge — you can’t do any of that if you’re on dialysis. You just can’t.”</p>
+                <a href="">Read Full Story >></a>            
+            </div>
+        </section>
     </main>
 
     <footer>

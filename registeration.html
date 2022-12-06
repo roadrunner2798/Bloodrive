@@ -1,97 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloodrive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <script>
-        
-    </script>
+    
     <style>
-        body{
-            border: 0rem;
-            margin: 0rem;
-            padding: 0rem;
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    :root{
+                --header-link: #f0f4ef;
+                --header-link-decoration: none;
+                --header-bg: #fce7e7;
+                --header-family: 'Outfit', sans-serif;
+                --header-family-font-color: #e7131b;
+                --header-button-font-color: #ffffff;
+    
+                --footer-bg: #e7131b;
+                --footer-fg: #ffffff;
+                --font-family: 'Outfit', sans-serif;
+    
+    }
+    
+    
+    #navbar {
+      overflow: hidden;
+      background-color: #fce7e7;
+      padding: 100px 13% 15px 13%;
+      margin: 0px;
+      border: 0px;
+      transition: 0.4s;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+    }
+    
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    
+    #navbar #logo {
+      font-size: 60px;
+      font-weight: bold;
+      transition: 0.3s;
+      color: #e7131b;
+    }
+    
+    #navbar #logo:hover {
+      color: #e57373;
+    }
+    
+    
+    #navbar-right a:hover {
+      background-color: #ffcdd2;
+      color: black;
+      border-radius: 35px;
+      transition: 0.9s;
+      text-decoration: underline;
+    }
+    
+    #navbar a.active {
+      background-color: #fb6d6d;
+      color: white;
+      border-radius: 35px;
+    }
+    
+    #navbar-right {
+      float: right;
+    }
+    
+    @media screen and (max-width: 580px) {
+      #navbar {
+        padding: 20px 10px !important;
+      }
+      #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      #navbar-right {
+        float: none;
+      }
+    }
+    
+    #navbar-right button {
+       background-color: #e7131b;
+       border-radius: 34px;
+       border: none;
+       margin-left: 10px;
+    }
+    
+    #navbar-right button:hover {
+      background-color: #c62828;
+    }
+      
+      
+    #navbar-right button a {
+      color:#ffffff;
+      font-weight:normal;
+      letter-spacing: 1px;
+      font-size: 18px;
+      transition: 0.4s;
+      width: 130px;
+      font-family: 'Outfit', sans-serif; 
+      }
+      
+    #navbar-right button a:hover {
+      background-color: #c62828;
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 18px;
+      transition: 0.2s;
+      width: 130px; 
+    }
 
-        }
+.breadcrumbs {
+  display: grid;
+  grid-template-columns: 1fr 25fr;
+  gap: 0px;
+  padding-left: 15%;
+  align-items: center;
+  position: relative;
+}
 
-        :root{
-            --header-link: #f0f4ef;
-            --header-link-decoration: none;
-            --header-bg: #fce7e7;
-            --header-family: 'Outfit', sans-serif;
-            --header-family-font-color: #e7131b;
-            --header-button-font-color: #ffffff;
 
-            --footer-bg: #e7131b;
-            --footer-fg: #ffffff;
-            --font-family: 'Outfit', sans-serif;
 
-        }
-
-        header{
-            height: 12rem;
-            background-color: var(--header-bg);
-            font-family: var(--header-family);
-        }
-
-        header a {
-            text-decoration: var(--header-link-decoration);
-            color: var(--header-family-font-color);
-            
-        }
-
-        .header {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-            align-items: center;
-            padding-top: 6rem;
-            padding-left: 13%;
-            padding-right: 13%;
-            font-size: 4rem;
-            font-weight: 700;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-evenly;
-            font-size: 1.3rem;
-            font-weight: 500;
-            padding-top: 2rem;
-            align-items: center;
-        }
-
-        .header button {
-            color: var(--header-button-font-color);
-            background-color: var(--header-family-font-color);
-            height: 50px;
-            width: 180px;
-            border-color: #e7131b;
-            border-radius: 2rem;
-            border-style: solid;
-            font-size: 16px;
-            letter-spacing: 0.06rem;
-        }
-
-        .header button a {
-            color: #f0f4ef;
-        }
 
         .register {
             font-family: var(--font-family);
             font-size: 16px;
-            height: 40rem;
             align-items: center;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            padding-left: 13%;
-            padding-right: 13%;
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-top: 2%;
+            padding-bottom: 8%;
             gap: 5%;
 
         }
@@ -269,17 +334,20 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header">
-          <a href="index.html">Bloodrive</a>
-          <nav class="navbar">
-              <a href="">THE DRIVE</a>
-              <a href="blogs.html">BLOG</a>
-              <a href="">CONTRIBUTE</a>
-              <button><a href="registeration.html">REGISTER NOW</a></button>
-          </nav>
-        </div>
-    </header>
+    <div id="navbar">
+  <a href="#default" id="logo">Bloodrive</a>
+  <div id="navbar-right">
+    <a href="index.html">Home</a>
+    <a href="#drive">The Drive</a>
+    <a href="#contact">Blog</a>
+    <a href="quiz.html">Eligibility Quiz</a>
+    <button><a href="registeration.html" id="register">Register</a></button>
+  </div>
+</div>
+    <div class="breadcrumbs" style="margin-top: 170px;">
+        <a href="index.html">Home</a>
+        <p>>> Eligibility Quiz</p>
+    </div>
 
     <main>
         <section class="register">
@@ -403,5 +471,20 @@
             </div>
         </section>
     </footer>
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "20px 13% 10px 13%";
+            document.getElementById("logo").style.fontSize = "40px";
+          } else {
+            document.getElementById("navbar").style.padding = "100px 13% 15px 13%";
+            document.getElementById("logo").style.fontSize = "60px";
+          }
+        }
+        </script>
 </body>
 </html>

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -178,6 +175,59 @@ body {
   align-items: center;
 }
 
+.howdonationworks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.howdonationworksheading h2 {
+  margin-top: 10%;
+  margin-left: 15%;
+  font-size: 48px;
+  color: #e7131b;
+}
+
+.howdonationworks h3 {
+  font-size: 32px;
+  color: #e7131b;
+}
+
+.howdonationworks h4 {
+  font-size: 24px;
+}
+
+.stepone {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fce7e7;
+  padding: 10%;
+  border-radius: 35px;
+}
+.steptwo {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fce7e7;
+  padding: 10%;
+  border-radius: 35px;
+}
+.stepthree {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fce7e7;
+  padding: 10%;
+  border-radius: 35px;
+}
+
 
 .quiz {
   background-color: #fce7e7;
@@ -234,23 +284,39 @@ body {
   margin-right: auto;
 }
 
+.forminput {
+  margin-left: 15%;
+}
 
-.registernow {
+.forminput h2 {
+  font-size: 24px;
+  color: #e7131b;
+}
+
+.forminput input {
+            height: 40px;
+            border-radius: 35px;
+            border-style: solid;
+            border-color: #e7131b;
+        }
+
+
+.donatebutton {
   background-color: #e7131b;
   height: 50px;
-  width: 250px;
+  width: 200px;
   font-family: var(--font-family);
   font-size: 18px;
   color: #ffffff;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15%;
   border: none;
   border-radius: 35px;
   letter-spacing: 2px;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
-.registernow:hover {
+.donatebutton:hover {
   background-color: #c62828;
 }
 
@@ -308,79 +374,63 @@ body {
   <a href="#default" id="logo">Bloodrive</a>
   <div id="navbar-right">
     <a href="index.html">Home</a>
-    <a href="#drive">The Drive</a>
+    <a href="thedrive.html">The Drive</a>
     <a href="blogs.html">Blog</a>
-    <a class="active" href="quiz.html">Eligibility Quiz</a>
+    <a class="active" href="quiz.html">Contribute</a>
     <button><a href="registeration.html" id="register">Register</a></button>
   </div>
 </div>
 
 <div class="breadcrumbs" style="margin-top: 170px;">
   <a href="index.html">Home</a>
-  <p>>> Eligibility Quiz</p>
+  <p>>> Contribute</p>
 </div>
 
 <main>
         
   <section class="heading">
       <div class="thedrive">
-          <h1>Are You Eligible To Donate Blood?</h1>
-          <p class="intro">Take this 2 min quiz to find out..</p>
+          <h1>Ways You Can Contribute</h1>
+          <p class="intro">Your help can save so many lives..</p>
       </div>
       <div class="headingimage">
-          <img src="Images/Quiz.png" alt="Blood Donation Illustration" height="350px">
+          <img src="Images/Contribute.png" alt="Blood Donation Illustration" height="350px">
       </div>
   </section>
 
-<section class="quiz">
-  <p class="headingtext">ARE YOU ELIGIBLE?</p>
-  <div class="questions">
-    <p>1. Are you 17 years or older?</p>
-    <div class="questionone">
-      <button>Yes</button>
-      <button>No</button>
+  <section class="howdonationworksheading">
+    <h2>How Donations Work?</h2>
+  </section>
+  
+  <section class="howdonationworks">
+    
+    <div class="stepone">
+      <h3>Step 1</h3>
+      <h4>Donate an amount</h4>
+      <p>Send Any amount you like via a gift donation to the organization</p>
     </div>
-    <p>2. Have you had a tattoo or piercing in the last three months?</p>
-    <div class="questionone">
-      <button>Yes</button>
-      <button>No</button>
+    <div class="steptwo">
+      <h3>Step 2</h3>
+      <h4>We use it for the cause</h4>
+      <p>All the funds we receive are directly sent to the charities we donate to and the events we conduct</p>
     </div>
-    <p>3. Have you travelled outside of Canada, the continental USA, Antarctica or Europe in the last 3 weeks?</p>
-    <div class="questionone">
-      <button>Yes</button>
-      <button>No</button>
+    <div class="stepthree">
+      <h3>Step 3</h3>
+      <h4>You’ve made an impact</h4>
+      <p>Our ultimate aim is to save lives and with your contribution, you help the same</p>
     </div>
-    <p>4. Have you been to the dentist for an extraction, surgery or root canal in the last three days?</p>
-    <div class="questionone">
-      <button>Yes</button>
-      <button>No</button>
-    </div>
-    <p>5. Are you pregnant, have been pregnant or had a baby in the last six months?</p>
-    <div class="questionone">
-      <button>Yes</button>
-      <button>No</button>
-    </div>
-    <p>6. Are you taking prescription medication(s)?</p>
-    <div class="questionone">
-      <button>Yes</button>
-      <button>No</button>
-    </div>
-    <p>7. Do you weigh more than 50 kg (110 lb.)?</p>
-    <div class="questionone">
-      <button>Yes</button>
-      <button>No</button>
-    </div>
-    <div class="bottomcontent">
-      <h2>Great! You Are Eligible To Donate..</h2>
-      <p>Register now to book an appointment</p>
-      <button class="registernow">Register Now</button>
-    </div>
-  </div>
+  </section>
+
+  <section class="forminput">
+    <h2>Enter the Amount you wish to donate</h2>
+    <input type="text" placeholder="Your Amount">
+    <h2>Your Name</h2>
+    <input type="text" placeholder=" Enter Your Name">
+  </section>
+
+<button class="donatebutton">Donate Now</button>
 
 
-  
-  
-</section>
 
 </main>
 

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    
+    <style>
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    :root{
+                --header-link: #f0f4ef;
+                --header-link-decoration: none;
+                --header-bg: #fce7e7;
+                --header-family: 'Outfit', sans-serif;
+                --header-family-font-color: #e7131b;
+                --header-button-font-color: #ffffff;
+    
+                --footer-bg: #e7131b;
+                --footer-fg: #ffffff;
+                --font-family: 'Outfit', sans-serif;
+    
+    }
+    
+    
+    #navbar {
+      overflow: hidden;
+      background-color: #fce7e7;
+      padding: 100px 13% 15px 13%;
+      margin: 0px;
+      border: 0px;
+      transition: 0.4s;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+    }
+    
+    #navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    
+    #navbar #logo {
+      font-size: 60px;
+      font-weight: bold;
+      transition: 0.3s;
+      color: #e7131b;
+    }
+    
+    #navbar #logo:hover {
+      color: #e57373;
+    }
+    
+    
+    #navbar-right a:hover {
+      background-color: #ffcdd2;
+      color: black;
+      border-radius: 35px;
+      transition: 0.9s;
+      text-decoration: underline;
+    }
+    
+    #navbar a.active {
+      background-color: #fb6d6d;
+      color: white;
+      border-radius: 35px;
+    }
+    
+    #navbar-right {
+      float: right;
+    }
+    
+    @media screen and (max-width: 580px) {
+      #navbar {
+        padding: 20px 10px !important;
+      }
+      #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      #navbar-right {
+        float: none;
+      }
+    }
+    
+    #navbar-right button {
+       background-color: #e7131b;
+       border-radius: 34px;
+       border: none;
+       margin-left: 10px;
+    }
+    
+    #navbar-right button:hover {
+      background-color: #c62828;
+    }
+      
+      
+    #navbar-right button a {
+      color:#ffffff;
+      font-weight:normal;
+      letter-spacing: 1px;
+      font-size: 18px;
+      transition: 0.4s;
+      width: 130px;
+      font-family: 'Outfit', sans-serif; 
+      }
+      
+    #navbar-right button a:hover {
+      background-color: #c62828;
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 18px;
+      transition: 0.2s;
+      width: 130px; 
+    }
+
+.breadcrumbs {
+  display: grid;
+  grid-template-columns: 1fr 25fr;
+  gap: 0px;
+  padding-left: 15%;
+  align-items: center;
+  position: relative;
+}
+
+
+
+        
+        .heading {
+            font-family: var(--font-family);
+            font-size: 16px;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 15%;
+            padding-right: 15%;
+
+        }
+
+        .thedrive {
+            padding-top: 25px;
+        }
+
+        .thedrive h1 {
+            font-size: 64px;
+            font-weight: 800;
+            width: 450px;
+            padding-top: 0%;
+            margin: 0%;
+        }
+
+        .intro {
+            font-size: 18px;
+            width: 555px;
+            padding-bottom: 10px;
+        }
+
+        .button1 {
+            font-size: 20px;
+            font-weight: 700;
+            font-kerning: 10%;
+            height: 65px;
+            width: 255px;
+            background-color: #e7131b;
+            border-radius: 34px;
+            border: none;
+            
+
+        }
+
+        .button1 a {
+            text-decoration: none;
+            color: #f0f4ef;
+            letter-spacing: 0.08rem;
+        }
+
+        .button2 {
+            margin-left: 15px;
+            font-size: 20px;
+            font-weight: 700;
+            height: 65px;
+            width: 255px;
+            background-color: #ffffff;
+            border-radius: 34px;
+            border-color: #e7131b;
+            border-style: solid;
+
+        }
+
+
+        .button2 a {
+            text-decoration: none;
+            color: #e7131b;
+            letter-spacing: 0.08rem;
+            
+        }
+
+        .registeration {
+            font-family: var(--font-family);
+            font-size: 16px;
+            height: 40rem;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 13%;
+            padding-right: 13%;
+            padding-bottom: 83px;
+
+        }
+
+        .register {
+            padding-top: 25px;
+        }
+
+        .register h2 {
+            font-size: 48px;
+            font-weight: 800;
+            width: 350px;
+            padding-top: 0%;
+            margin: 0%;
+        }
+
+        .skip {
+            font-size: 18px;
+            width: 555px;
+            padding-bottom: 10px;
+        }
+
+        .registerbutton {
+            font-size: 20px;
+            font-weight: 700;
+            font-kerning: 10%;
+            height: 65px;
+            width: 255px;
+            background-color: #e7131b;
+            border-radius: 34px;
+            border: none;
+            
+
+        }
+
+        .registerbutton a {
+            text-decoration: none;
+            color: #f0f4ef;
+            letter-spacing: 0.08rem;
+        }
+
+        .registeration img {
+            padding-left: 89px;
+            padding-top: 42px;
+        }
+
+        .bloodrivestats {
+            margin-left: 13%;
+            margin-right: 13%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
+
+        .bloodrivestats h2 {
+            color: #e7131b;
+            font-size: 48px;
+            margin-bottom: 0%;
+        }
+
+        .bloodrivestats p {
+            font-size: 24px;
+
+        }
+
+        .litres {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .lives {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .volunteers {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .quiz {
+            background-color: #fce7e7;
+            font-family: var(--font-family);
+            height: 35rem;
+            margin-left: 188px;
+            margin-right: 188px;
+            margin-bottom: 83px;
+            padding-top: 58px;
+            padding-bottom: 58px;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            align-items: center;
+            border-radius: 35px;
+        }
+
+        .quiz p {
+            text-align: center;
+        }
+
+        .quiz h2 {
+            font-size: 48px;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            color: #e7131b;
+        }
+
+        .quiz button {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.06rem;
+            height: 65px;
+            width: 281px;
+            border: none;
+            border-radius: 35px;
+            background-color: #e7131b;
+            color: #f0f4ef;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quiz button:hover {
+            background-color: #c62828;
+        }
+
+        .quiz button a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .driveimages img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .driveimages p {
+            font-size: 25px;
+            color: #e7131b;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-left: 13%;
+        }
+
+
+
+        .location {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 188px;
+            margin-right: 188px;
+            height: 500px;
+            padding-bottom: 116px;
+        }
+
+        .address {
+            padding-top: 50px;
+            margin-left: 50px;
+            font-family: var(--font-family);
+            color: #e7131b;
+        }
+
+        .address h3 {
+            font-size: 32px;
+        }
+
+        .details {
+            color: black;
+            font-size: 16px;
+        }
+
+        .address h4 {
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        .place {
+            font-size: 20px;
+        }
+        
+
+        
+
+        footer {
+            height: 36rem;
+            background-color: var(--footer-bg);
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            padding-left: 12rem;
+            padding-right: 12rem;
+        }
+
+        .sitemap {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .logoleft {
+            font-size: 2.5rem;
+            color: var(--footer-fg);
+            font-family: var(--font-family);
+            font-weight: 700;
+        }
+
+        .sitemap ul {
+            list-style: none;
+            font-family: var(--font-family);
+            color: var(--footer-fg);
+            padding-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .sitemap li {
+            margin-top: 1.8rem;
+        }
+
+        .sitemap a {
+            text-decoration: var(--header-link-decoration);
+            color: var(--footer-fg);
+            font-weight: 200;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#default" id="logo">Bloodrive</a>
+        <div id="navbar-right">
+          <a href="index.html">Home</a>
+          <a class="active" href="thedrive.html">The Drive</a>
+          <a href="blogs.html">Blog</a>
+          <a href="quiz.html">Contribute</a>
+          <button><a href="registeration.html" id="register">Register</a></button>
+        </div>
+    </div>
+      
+    <div class="breadcrumbs" style="margin-top: 170px;">
+        <a href="index.html">Home</a>
+        <p>>> The Drive</p>
+    </div>
+
+    <main>
+        
+        <section class="heading">
+            <div class="thedrive">
+                <p>THE DRIVE</p>
+                <h1>Bloodrive Is Coming To Toronto</h1>
+                <p class="intro">Join the cause and come to donate in your city..</p>
+            </div>
+            <div class="headingimage">
+                <img src="Images/thedrive heading.png" alt="Blood Donation Illustration" height="542px">
+            </div>
+        </section>
+
+         <section class="driveimages">
+            <img src="Images/thedrive main.png" alt="" style="width:75%;">
+
+            <p>Join the effort and save lives</p>
+            <p>Pledge to becoming a regular donor and give blood throughout the year.</p>
+            <p>#DonateBlood #ShowSolidarity</p>
+         </section>
+
+         <section class="bloodrivestats">
+            <div class="litres">
+                <h2>1200L</h2>
+                <p>of blood donated</p>
+            </div>
+
+            <div class="lives">
+                <h2>486</h2>
+                <p>Lives Saved</p>
+            </div>
+
+            <div class="volunteers">
+                <h2>250+</h2>
+                <p>Volunteers</p>
+            </div>
+         </section>
+
+        <section class="quiz">
+            <p>ARE YOU ELIGIBLE</p>
+            <h2>Take This 2-Minute Quiz To Know If You Can Donate</h2>
+            <button><a href="quiz.html">TAKE THE QUIZ</a></button>
+        </section>
+
+
+        <section class="location">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.210243765103!2d-79.3892479233259!3d43.64379395303842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d6785ffb55%3A0x4209e1f8fd986202!2sMetro%20Toronto%20Convention%20Centre!5e0!3m2!1sen!2sca!4v1668404339108!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+            <div class="address">
+                <p class="details">DETAILS</p>
+                <h3>December 20, 2022</h3>
+                <h4>Metro Toronto Convention Centre</h4>
+                <p class="place">222, Bremner Blvd, Toronto, ON</p>
+                <h4>11AM - 5PM</h4>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="logoleft">
+                <p>Bloodrive</p>
+            </div>
+            <div class="sitemap">
+                <ul>
+                    <li>HOME</li>
+                    <li><a href="">The Drive</a></li>
+                    <li><a href="">Register Now</a></li>
+                    <li><a href="">Are You Eligible?</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contribute</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+                <ul>
+                    <li>ABOUT US</li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Volunteer</a></li>
+                    <li><a href="">Directions</a></li>
+                </ul>
+                <ul>
+                    <li>SOCIAL</li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                </ul>
+
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "20px 13% 10px 13%";
+            document.getElementById("logo").style.fontSize = "40px";
+          } else {
+            document.getElementById("navbar").style.padding = "100px 13% 15px 13%";
+            document.getElementById("logo").style.fontSize = "60px";
+          }
+        }
+        </script>
+</body>
+</html>
